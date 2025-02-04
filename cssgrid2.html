@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: pink;
+            border: 5px purple solid;
+            padding: 20px;
+            display: grid;
+            /*grid-template-columns: auto auto 50%; 2colume will be same and third colume will be 50%*/
+            /*grid-template-columns: 10% auto 50%;
+            grid-template-rows: 150px 200px;*/
+           /* grid-template: 100px 200px/ 30% auto auto;
+            grid-row-gap: 20px;*/
+            grid-gap:20px 30px;
+
+        }
+        .item{
+            border: 2px green solid;
+            padding: 10px;
+            color:blue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: lightgreen;
+
+        }
+        /*change position of ittem3*/
+        #i3{
+            grid-row-start:2;
+            grid-row-end: span 2;/*if we not use span we will only write no and stsrt-end that much row will murse*/
+            grid-row:2/span 3;
+
+
+        }
+        #i7{
+            /*grid-column-start: 3;
+            grid-column-end: span 2;*/
+            grid-column: 4/span 6;
+           
+
+        }
+        #i9{
+            grid-area: 2/3/span 2/span 2;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="container" >
+    <div class="item">Iteam1</div>
+    <div class="item">Iteam2</div>
+    <div class="item" id="i3">Iteam3</div>
+    <div class="item">Iteam4</div>
+    <div class="item">Iteam5</div>
+    <div class="item">Iteam6</div>
+    <div class="item" id="i7">Iteam7</div>
+    <div class="item">Iteam8</div>
+    <div class="item" id="i9">Iteam9</div>
+    
+   </div>
+</body>
+</html>

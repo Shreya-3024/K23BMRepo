@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Dishes of India</title>
+    <style>
+       .container{
+        background-color: pink;
+            border: 5px purple solid;
+            padding: 20px;
+            display: grid;
+            /*grid-template-columns: auto auto 50%; 2colume will be same and third colume will be 50%*/
+            /*grid-template-columns: 10% auto 50%;
+            grid-template-rows: 150px 200px;*/
+            grid-template: 100px 150px 150px 150px/ auto auto auto ;
+       } 
+       .item{
+            border: 2px green solid;
+            padding: 10px;
+            color:blue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: lightgreen;
+            text-align: center;
+        }
+        #i1{
+            grid-column-start: 1;
+            grid-column-end: span 3;
+           font-size: 1.5em;
+            font-weight: bold;
+
+      
+        }
+        #i2{
+            grid-column-start: 1;
+            grid-column-end: span 3;
+        }
+        #i5{
+            grid-column-start: 1;
+            grid-column-end: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <div class="item" ID="i1">FAMOUS DISHES OF INDIA</div>
+        <div class="item" id="i2">
+            <img src="htmlphoto\1.PNG" alt="DISH 1" style="width:30%;height: auto;">
+            <p>Masala Dosa - A crispy rice pancake filled with spicy potato mixture</p>
+        </div>
+        <div class="item">
+            <img src="htmlphoto\2.PNG" alt="Dish 2" style="width: 50%; height:auto;">
+            <p>Butter Chicken - A creamy tomato-based chicken curry.</p>
+        </div>
+        <div class="item" >
+            <img src="htmlphoto\3.PNG" alt="DISH 3" style="width: 40%; height:auto;">
+            <p>Chole Bhature - A popular Punjabi dish of spicy chickpeas served with fried bread.</p>
+        </div>
+        <div class="item">
+            <img src="htmlphoto\4.PNG" alt="DISH 4" style="width:50%;height: auto;">
+            <p>Biryani - A flavorful rice dish with spices and meat or vegetables.</p>
+        </div>
+        <div class="item" id="i5">
+            <img src="htmlphoto\5.PNG" alt="DISH 5" style="width:40%;height: auto;">
+            <p>CAKE: a desert whih everyone like.</p>
+        </div>
+        <div class="item">
+            <p><b>Cake is not just a dessert; it's a comforting treat that holds memories and traditions for many.</b></p>
+        </div>
+        
+        
+       </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: lightgray;
+            border: 2px solid green;
+            display: flex;/*side by side*/
+            padding: 20px;
+            /*justify-content: center;
+            justify-content: flex-end;/*right*/
+            justify-content: flex-start;/*auto display*/
+            align-items: center;
+
+
+        }
+        .item{
+            background-color: lightgreen;
+            border: 2px solid red;
+            width:50px;
+            height:50px;
+            padding: 10px;
+        }
+        #i1{
+    /*flex-grow: 5; 
+     flex-shrink: 5;
+    align-self: flex-start; */
+    margin-right: auto;
+}
+
+@media(max-width:400px){
+
+    .container{
+        flex-wrap: wrap;
+        background-color: aquamarine;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">Iteam1</div>
+        <div class="item">Iteam2</div>
+        <div class="item">Iteam3</div>
+        <div class="item">Iteam4</div>
+        <div class="item">Iteam5</div>
+        <div class="item">Iteam6</div>
+    </div>
+</body>
+</html>
